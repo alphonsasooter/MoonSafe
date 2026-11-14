@@ -1,53 +1,145 @@
-# MoonSafe
+# 🌙 MoonSafe
+### Lunar Landing Site Suitability Analysis
 
-A React + Vite frontend and Flask API scaffold for a lunar landing-site decision-support prototype.
+**NASA Space Apps Challenge 2026 | Lunar Terrain Intelligence**
 
-## Important scientific status
+MoonSafe is a web-based lunar landing site assessment prototype that uses NASA-derived terrain data to compare potential landing regions near the Moon's south pole.
 
-The current dashboard contains **illustrative placeholder values only** for interface development. They are not NASA measurements, not validated landing-site scores, and must not be presented as scientific results. The Flask comparison endpoint currently validates inputs and explicitly reports that LOLA/SPICE analysis is pending.
+The platform visualizes lunar imagery, analyzes elevation and slope statistics, calculates prototype terrain safety scores, and generates a landing site recommendation.
 
-## Requirements
+### 🌐 Live Demo
 
-- Windows 11
-- Python 3.10+
-- Node.js LTS and npm
-- VS Code (recommended)
+**Website:** https://moon-safe.vercel.app/
 
-## Run the backend (PowerShell)
+**GitHub:** https://github.com/alphonsasooter/MoonSafe
 
-```powershell
-cd MoonSafe\backend
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+## 🚀 Key Features
+
+- **Mission Dashboard:** Interactive overview of lunar landing candidates.
+- **NASA Terrain Analysis:** Elevation and slope statistics derived from lunar GeoTIFF datasets.
+- **Lunar Map:** Visual exploration of candidate landing regions.
+- **Landing Site Safety Analysis:** Comparative prototype suitability scores.
+- **Mission Recommendation:** A recommendation based on the implemented scoring logic.
+- **API Integration:** React frontend connected to a Flask backend.
+
+## 🌕 Candidate Landing Regions
+
+| Region | Dataset |
+|---|---|
+| Shackleton Rim | NASA LOLA Site04 |
+| Malapert Massif | NASA LOLA Site23 |
+
+The prototype compares terrain characteristics of these two candidate regions. Its safety scores are intended for educational and exploratory comparison, not certified mission planning.
+
+## 🛠️ Technology Stack
+
+| Component | Technology |
+|---|---|
+| Frontend | React, Vite, JavaScript, CSS |
+| Backend | Python, Flask |
+| Geospatial Processing | Rasterio, NumPy |
+| Terrain Data | NASA-derived lunar GeoTIFFs |
+| Frontend Hosting | Vercel |
+| Backend Hosting | Render |
+| Version Control | Git, GitHub |
+| Deployment | Docker |
+
+## 🏗️ System Architecture
+
+```text
+NASA Lunar Terrain Datasets
+           |
+           v
+   GeoTIFF Processing
+     Python + Rasterio
+           |
+           v
+   Terrain Statistics
+           |
+           v
+     Flask REST API
+           |
+           v
+   React / Vite Frontend
+           |
+           v
+  MoonSafe Web Dashboard
+           |
+           +-- Terrain Comparison
+           +-- Lunar Map
+           +-- Safety Analysis
+           +-- Mission Recommendation
+```
+
+## ⚙️ How It Works
+
+1. NASA-derived terrain datasets provide elevation and slope measurements.
+2. The backend processes or loads previously calculated terrain statistics.
+3. MoonSafe compares Shackleton Rim and Malapert Massif.
+4. The frontend calculates and displays prototype safety scores.
+5. The application presents a mission recommendation based on those scores.
+
+**Deployment note:** The hosted application uses precomputed terrain statistics generated from the original raster datasets. Local development supports direct GeoTIFF processing. The large source rasters are not included in the GitHub repository.
+
+## 💻 Run Locally
+
+### Backend
+
+```bash
+cd backend
 pip install -r requirements.txt
 python app.py
 ```
 
-Backend: http://127.0.0.1:5000
-Health check: http://127.0.0.1:5000/api/health
+The backend runs at `http://127.0.0.1:5000`.
 
-If PowerShell blocks virtual-environment activation, run this in that terminal and retry:
+Live raster processing requires the original terrain files in the paths expected by the backend.
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
+### Frontend
 
-## Run the frontend (second terminal)
+Open a separate terminal:
 
-```powershell
-cd MoonSafe\frontend
+```bash
+cd frontend
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite, usually http://localhost:5173.
+Open the local address displayed by Vite, usually `http://localhost:5173`.
 
-## Next scientific implementation milestones
+## 📊 Results
 
-1. Replace temporary site coordinates with sourced, documented candidate coordinates and site footprints.
-2. Integrate NASA LOLA elevation/slope rasters using their actual CRS, units, nodata and uncertainty metadata.
-3. Integrate suitable NAIF SPICE kernels and validate frame/time conversions.
-4. Compute solar and Earth geometry at a documented sampling cadence.
-5. Model local terrain horizon obstruction; geometric elevation alone does not prove line of sight.
-6. Define and validate component scoring, missing-data handling and independent critical-hazard flags.
-7. Replace all illustrative dashboard values with API-backed calculations and provenance.
+MoonSafe demonstrates a functioning terrain comparison workflow with:
+
+- Elevation and slope analysis
+- Comparative safety scores
+- Candidate landing site selection
+- Mission recommendation
+- Online frontend and backend integration
+
+## 🔮 Future Enhancements
+
+- Solar illumination analysis
+- Earth communication visibility assessment
+- Additional landing site candidates
+- More detailed hazard detection
+- Interactive georeferenced lunar mapping
+- Mission-specific safety weighting
+
+## ⚠️ Limitations
+
+MoonSafe is a research and educational prototype. Its terrain-based safety scores do not account for every factor required for an actual lunar landing, including illumination, spacecraft performance, navigation uncertainty, and communication constraints.
+
+## 👩‍🚀 Team
+
+Developed for NASA Space Apps Challenge 2026.
+
+**Project:** MoonSafe
+
+**Repository:** alphonsasooter/MoonSafe
+
+## 📄 Acknowledgments
+
+NASA lunar exploration missions and publicly available lunar terrain data resources.
+
+NASA Space Apps Challenge.
