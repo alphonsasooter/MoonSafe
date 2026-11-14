@@ -1,0 +1,156 @@
+﻿{
+    "comparison":  {
+                       "malapert":  {
+                                        "elevation":  {
+                                                          "maximum":  5173.563,
+                                                          "mean":  3534.981,
+                                                          "median":  3618.438,
+                                                          "minimum":  901.991,
+                                                          "std_dev":  1026.241,
+                                                          "unit":  "metres",
+                                                          "valid_pixels":  17640000
+                                                      },
+                                        "processing":  "Statistics over complete supplied raster footprint",
+                                        "raster_metadata":  {
+                                                                "elevation":  {
+                                                                                  "bounds":  [
+                                                                                                 -11000.0,
+                                                                                                 111000.0,
+                                                                                                 10000.0,
+                                                                                                 132000.0
+                                                                                             ],
+                                                                                  "crs":  "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+                                                                                  "height":  4200,
+                                                                                  "resolution":  [
+                                                                                                     5.0,
+                                                                                                     5.0
+                                                                                                 ],
+                                                                                  "width":  4200
+                                                                              },
+                                                                "slope":  {
+                                                                              "bounds":  [
+                                                                                             -11000.0,
+                                                                                             111000.0,
+                                                                                             10000.0,
+                                                                                             132000.0
+                                                                                         ],
+                                                                              "crs":  "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+                                                                              "height":  4200,
+                                                                              "resolution":  [
+                                                                                                 5.0,
+                                                                                                 5.0
+                                                                                             ],
+                                                                              "width":  4200
+                                                                          }
+                                                            },
+                                        "score_status":  "not_calculated",
+                                        "selected_threshold_degrees":  10.0,
+                                        "site":  "Malapert Massif",
+                                        "slope":  {
+                                                      "maximum":  76.183,
+                                                      "mean":  17.392,
+                                                      "median":  17.865,
+                                                      "minimum":  0.02,
+                                                      "std_dev":  6.962,
+                                                      "unit":  "degrees",
+                                                      "valid_pixels":  17640000
+                                                  },
+                                        "slope_distribution":  {
+                                                                   "10":  {
+                                                                              "percentage":  83.178,
+                                                                              "pixels":  14672626
+                                                                          },
+                                                                   "15":  {
+                                                                              "percentage":  63.411,
+                                                                              "pixels":  11185686
+                                                                          },
+                                                                   "20":  {
+                                                                              "percentage":  39.123,
+                                                                              "pixels":  6901326
+                                                                          },
+                                                                   "5":  {
+                                                                             "percentage":  95.684,
+                                                                             "pixels":  16878691
+                                                                         }
+                                                               },
+                                        "source":  "NASA LOLA"
+                                    },
+                       "shackleton":  {
+                                          "elevation":  {
+                                                            "maximum":  1805.073,
+                                                            "mean":  245.344,
+                                                            "median":  668.188,
+                                                            "minimum":  -2847.877,
+                                                            "std_dev":  1246.316,
+                                                            "unit":  "metres",
+                                                            "valid_pixels":  10240000
+                                                        },
+                                          "processing":  "Statistics over complete supplied raster footprint",
+                                          "raster_metadata":  {
+                                                                  "elevation":  {
+                                                                                    "bounds":  [
+                                                                                                   -9000.0,
+                                                                                                   -15000.0,
+                                                                                                   7000.0,
+                                                                                                   1000.0
+                                                                                               ],
+                                                                                    "crs":  "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+                                                                                    "height":  3200,
+                                                                                    "resolution":  [
+                                                                                                       5.0,
+                                                                                                       5.0
+                                                                                                   ],
+                                                                                    "width":  3200
+                                                                                },
+                                                                  "slope":  {
+                                                                                "bounds":  [
+                                                                                               -9000.0,
+                                                                                               -15000.0,
+                                                                                               7000.0,
+                                                                                               1000.0
+                                                                                           ],
+                                                                                "crs":  "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+                                                                                "height":  3200,
+                                                                                "resolution":  [
+                                                                                                   5.0,
+                                                                                                   5.0
+                                                                                               ],
+                                                                                "width":  3200
+                                                                            }
+                                                              },
+                                          "score_status":  "not_calculated",
+                                          "selected_threshold_degrees":  10.0,
+                                          "site":  "Shackleton Rim",
+                                          "slope":  {
+                                                        "maximum":  69.647,
+                                                        "mean":  20.664,
+                                                        "median":  20.551,
+                                                        "minimum":  0.0,
+                                                        "std_dev":  10.102,
+                                                        "unit":  "degrees",
+                                                        "valid_pixels":  10240000
+                                                    },
+                                          "slope_distribution":  {
+                                                                     "10":  {
+                                                                                "percentage":  81.19,
+                                                                                "pixels":  8313860
+                                                                            },
+                                                                     "15":  {
+                                                                                "percentage":  63.022,
+                                                                                "pixels":  6453460
+                                                                            },
+                                                                     "20":  {
+                                                                                "percentage":  51.019,
+                                                                                "pixels":  5224369
+                                                                            },
+                                                                     "5":  {
+                                                                               "percentage":  95.344,
+                                                                               "pixels":  9763267
+                                                                           }
+                                                                 },
+                                          "source":  "NASA LOLA"
+                                      }
+                   },
+    "message":  "Terrain comparison completed",
+    "status":  "success"
+}
